@@ -1,0 +1,203 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 180px auto;
+    background: #212529;
+    height: auto;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+
+#header a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    align-self: center;
+    font-weight: 400px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    list-style: none;
+}
+
+#menu li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+    
+#menu li:hover, li:focus-within {
+    background: gray;
+    cursor: pointer;
+}
+
+#menu li:focus-within a {
+    outline: none;
+}
+
+#menu ul li ul {
+    background: #212529;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+#menu ul li:hover > ul, ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+#menu ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#subtitle{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #f8f9fa;
+    align-items: center;
+}
+
+#subtitle span{
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+#container{
+    width: 75%;
+    height: auto;
+    margin: 0px auto;
+    padding: 3rem !important;
+    border-radius: 0.25rem !important;
+    background-color: #f8f9fa !important;
+    margin-top: 1rem;
+    min-height: 600px;
+}
+
+#container h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#temas{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.texto-imagen{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 20px;
+}
+
+.noticia{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.noticia-cuerpo {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.noticia-cuerpo h5{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.noticia p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    text-justify: newspaper;
+}
+
+footer{
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #f8f9fa;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+
+.myButton {
+    margin-top: 20px;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 6px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.myButton:hover {
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
