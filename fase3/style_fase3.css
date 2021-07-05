@@ -124,7 +124,7 @@ ul li ul:focus {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .texto-imagen{
@@ -200,4 +200,47 @@ footer{
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+@media (max-width: 1400px){
+    #container{
+        padding-bottom: 5rem !important;
+    }
+    #temas{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px){
+    #container{
+        padding-bottom: 5rem !important;
+    }
+    #temas{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 630px){
+    #header {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #container{
+        padding-bottom: 5rem !important;
+    }
+    
+    #temas{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
