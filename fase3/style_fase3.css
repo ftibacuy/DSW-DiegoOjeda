@@ -184,10 +184,7 @@ footer{
 
 .myButton {
     margin-top: 20px;
-	box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	background-color:#3d94f6;
 	border-radius:6px;
-	border:1px solid #337fed;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -196,14 +193,43 @@ footer{
 	font-weight:bold;
 	padding:6px 6px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #1570cd;
+	
 }
-.myButton:hover {
+
+.myButton.blue{
+    background-color:#3d94f6;
+    border:1px solid #337fed;
+    text-shadow:0px 1px 0px #1570cd;
+}
+
+.myButton.blue:hover {
 	background-color:#1e62d0;
 }
+
+.myButton.green{
+    background-color:#77b55a;
+    border:1px solid #4b8f29;
+    text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.myButton.green:hover {
+	background-color:#52b362;
+}
+
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#video-youtube{
+    height: 100%; 
+    min-height: 450px;
+    width: 70%;
 }
 
 @media (max-width: 1400px){
@@ -230,9 +256,21 @@ footer{
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
+
+    #video-youtube{
+        height: 100%; 
+        min-height: 350px;
+        width: 70%;
+    }
 }
 
 @media (max-width: 1200px){
+    
+    #video-youtube{
+        height: 100%; 
+        min-height: 300px;
+        width: 70%;
+    }
     
     .noticia-imagen{
         display: grid;
